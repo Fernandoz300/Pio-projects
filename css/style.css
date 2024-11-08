@@ -1,0 +1,192 @@
+/* Tema de tecnología en el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f2e;
+    color: #00d4ff;
+}
+
+
+h1:hover::after {
+    content: " - ¡Bienvenido a mi perfil!";
+    color: #888;
+    font-size: 0.9em;
+}
+
+/* Contenedor 1 */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Mensaje emergente*/
+h1:hover::after {
+    content: " - ¡Bienvenido a mi perfil!";
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+/* Tarjeta */
+.tarjeta {
+    color: #00d4ff;
+    background-image: url("fondo.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+/* Estilo del encabezado */
+h1 {
+    color: #00d4ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la imagen de perfil */
+.perfil {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}   
+
+/* Bio */
+.bio {
+    margin-top: 15px;
+    color: #000000;
+}
+
+/* Estilo de los enlaces */
+.liks {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.link:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/*  Habilidades y Servicios */
+.contenido {
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.habilidades, .servicios {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.habilidades h2, .servicios h2 {
+    color: #00d4ff;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.habilidades ul, .servicios ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.habilidades li, .servicios li {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    padding: 10px 10px 10px 40px;
+    border-radius: 6px;
+    background-color: #2b2b3d;
+    color: #00d4ff;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.habilidades li:hover, .servicios li:hover {
+    transform: scale(1.05);
+}
+
+/* Iconos personalizados  */
+.habilidades li:nth-child(1)::before {
+    background-image: url("icon1.png");
+}
+
+.habilidades li:nth-child(2)::before {
+    background-image: url("icon2.png");
+}
+
+.habilidades li:nth-child(3)::before {
+    background-image: url("icon3.png");
+}
+
+.habilidades li:nth-child(4)::before{
+    background-image: url("icon4.png");
+}
+
+.habilidades li:nth-child(5)::before {
+    background-image: url("icon5.png");
+}
+
+.servicios li:nth-child(1)::before {
+    background-image: url("icon6.png");
+}
+
+.servicios li:nth-child(2)::before {
+    background-image: url("icon7.png");
+}
+
+.servicios li:nth-child(3)::before {
+    background-image: url("icon8.png");
+}
+
+/* los elementos de lista */
+.habilidades li::before, .servicios li::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
